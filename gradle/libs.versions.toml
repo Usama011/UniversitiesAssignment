@@ -1,0 +1,89 @@
+[versions]
+agp = "8.3.2"
+kotlin = "1.9.0"
+ksp-version = "1.9.0-1.0.13"
+
+coreKtx = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+
+hilt-version = "2.51"
+hilt-androidx-version = "1.2.0"
+hilt_viewmodel_version = "2.5.1"
+
+
+retrofit-version = "2.9.0"
+retrofit-logging-version = "4.11.0"
+
+coroutines-version = "1.7.1"
+
+androidx-viewmodel = "1.8.2"
+lifecycle_version =  "2.7.0"
+
+fragment-ktx = "1.6.2"
+
+room_db_version = "2.5.0"
+activity = "1.8.0"
+constraintlayout = "2.1.4"
+parcelize-version = "1.9.0"
+
+mockito-core = "2.22.0"
+core-testing = "1.1.1"
+google-truth = "1.1"
+hilt-testing = "2.44"
+kotlinx-coroutines-test = "1.6.0"
+mockito-kotlin = "4.0.0"
+androidx-runner = "1.5.1"
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+mockito = { module = "org.mockito:mockito-core", name = "mockito-core", version.ref = "mockito-core" }
+mockito-android = { module = "org.mockito:mockito-android", name = "mockito-android", version.ref = "mockito-core" }
+core-testing = { module = "android.arch.core:core-testing", name = "core-testing", version.ref = "core-testing" }
+google-truth = { module = "com.google.truth:truth", name = "google-truth", version.ref = "google-truth" }
+hilt-testing = { module = "com.google.dagger:hilt-android-testing", name = "hilt-testing ", version.ref = "hilt-testing" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", name = "kotlinx-coroutines-test", version.ref = "kotlinx-coroutines-test" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", name = "mockito-kotlin", version.ref = "mockito-kotlin" }
+androidx-runner = { module = "androidx.test:runner", name = "androidx-runner", version.ref = "androidx-runner" }
+
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt-version" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-version" }
+#hilt-viewmodel = { module = "androidx.hilt:hilt-lifecycle-viewmodel", name = "hilt-viewmodel", version.ref = "hilt_viewmodel_version" }
+hilt-androidx-compiler = { module = "androidx.hilt:hilt-compiler", name = "hilt-compiler", version.ref = "hilt-androidx-version" }
+
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", name = "retrofit2", version.ref = "retrofit-version" }
+retrofit-convertor = { module = "com.squareup.retrofit2:converter-gson", name = "convertor", version.ref = "retrofit-version" }
+retrofit-logging = { module = "com.squareup.okhttp3:logging-interceptor", name = "logging", version.ref = "retrofit-logging-version" }
+
+jetbrains-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", name = "core", version.ref = "coroutines-version" }
+jetbrains-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", name = "android", version.ref = "coroutines-version" }
+
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", name = "fragment-ktx", version.ref = "fragment-ktx" }
+androidx-viewmodel = { module = "androidx.activity:activity-ktx", name = "androidx", version.ref = "androidx-viewmodel" }
+androidx-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-ktx", name = "lifecycle", version.ref = "lifecycle_version" }
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", name = "room", version.ref = "room_db_version" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", name = "room", version.ref = "room_db_version" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp-version" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt-version" }
+parcelize = { id = "org.jetbrains.kotlin.android", version.ref = "parcelize-version" }
+
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+
